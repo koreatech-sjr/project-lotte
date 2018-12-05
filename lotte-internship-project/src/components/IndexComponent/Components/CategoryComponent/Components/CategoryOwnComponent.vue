@@ -56,20 +56,37 @@
 
       </div>
     </div>
-    <div
-      v-if="orderFlag">
-      <lotte-index-category-order-change></lotte-index-category-order-change>
-    </div>
+
+    <modal
+      style="z-index: 2"
+      name="dialog">
+
+      <draggable class="list-group" element="ul" v-model="list" :options="dragOptions" :move="onMove" @start="isDragging=true" @end="isDragging=false">
+        <transition-group type="transition" :name="'flip-list'">
+          <li class="list-group-item" v-for="element in list" :key="element.order">
+            <i :class="element.fixed? 'fa fa-anchor' : 'glyphicon glyphicon-pushpin'" @click=" element.fixed=! element.fixed" aria-hidden="true"></i>
+            {{element.dispNm}}
+          </li>
+        </transition-group>
+      </draggable>
+
+      <button @click="changeDone">변경하기</button>
+      <button @click="cancel">취소하기</button>
+    </modal>
+
+
   </div>
 </template>
 
 <script>
   import CategoryOrderChangeComponent from './CategoryOrderChangeComponent'
+  import draggable from "vuedraggable";
 
   export default {
     name: 'CateogryOwn',
     components: {
       "lotte-index-category-order-change": CategoryOrderChangeComponent,
+      draggable
     },
     props: {
       categorySample: null,
@@ -77,7 +94,11 @@
     data() {
       return {
         myCategory: [],
-        orderFlag: false
+        orderFlag: false,
+        list: null,
+        editable: true,
+        isDragging: false,
+        delayedDragging: false
       }
     },
     methods: {
@@ -112,11 +133,76 @@
         this.$emit('close');
       },
       changeOrder: function () {
-        this.orderFlag = !this.orderFlag;
+        //this.orderFlag = !this.orderFlag;
+        this.list = JSON.parse(this.$localStorage.get("myCategory")).map((dispNm, index) => {
+          return { dispNm, order: index + 1, fixed: false };
+        })
+        this.$modal.show('dialog');
+      },
+
+      orderList() {
+        this.list = this.list.sort((one, two) => {
+          return one.order - two.order;
+        });
+      },
+      onMove({ relatedContext, draggedContext }) {
+        const relatedElement = relatedContext.element;
+        const draggedElement = draggedContext.element;
+        return (
+          (!relatedElement || !relatedElement.fixed) && !draggedElement.fixed
+        );
+      },
+      returnCategoryName: function (ar) {
+        let tmp = [];
+        for (let i = 0; i < ar.length; i++) {
+          tmp.push(ar[i].dispNm);
+        }
+        return tmp;
+      },
+      changeDone: function() {
+        this.myCategory = this.returnCategoryName(this.list);
+        this.$localStorage.set("myCategory", JSON.stringify(this.myCategory));
+        alert("나의 카테고리 순서가 변경되었습니다.");
+        this.$modal.hide('dialog');
+      },
+
+      cancel: function() {
+        alert("취소되었습니다.");
+        this.$modal.hide('dialog');
+      }
+    },
+
+    computed: {
+      dragOptions() {
+        return {
+          animation: 0,
+          group: "description",
+          disabled: !this.editable,
+          ghostClass: "ghost"
+        };
+      },
+      listString() {
+        return JSON.stringify(this.list, null, 2);
+      },
+      list2String() {
+        return JSON.stringify(this.list2, null, 2);
+      }
+    },
+    watch: {
+      isDragging(newValue) {
+        if (newValue) {
+          this.delayedDragging = true;
+          return;
+        }
+        this.$nextTick(() => {
+          this.delayedDragging = false;
+        });
       }
     },
     created() {
       this.myCategory = this.$localStorage.get("myCategory") === null ? [] : JSON.parse(this.$localStorage.get("myCategory"));
+
+
     }
   }
 </script>
@@ -126,7 +212,7 @@
     position: relative;
     height: 100%;
     background: #6f99ff;
-    z-index: 1;
+    z-index: 0;
   }
 
   .header {
@@ -177,7 +263,7 @@
   }
 
   .category-image-group .category-image-box .check {
-    opacity: 0.5;
+    opacity: 0.8;
     position: relative;
     z-index: 3;
   }
@@ -194,5 +280,12 @@
     cursor: pointer;
     float: right;
     margin-right: 10px;
+  }
+
+  .order-list {
+    width: 100vh;
+    height: 100vh;
+    background: black;
+    z-index: 1;
   }
 </style>

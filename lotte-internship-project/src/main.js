@@ -5,7 +5,9 @@ import App from './App'
 import router from './router'
 import VueLocalStorage from 'vue-localstorage'
 import VueDragDrop from 'vue-drag-drop';
+import VModal from 'vue-js-modal'
 
+Vue.use(VModal,{ dialog: true })
 Vue.use(VueDragDrop);
 Vue.use(VueLocalStorage)
 Vue.config.productionTip = false
