@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23bd278f-56c2-41ec-a14b-0a1dcaaa04a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/CategoryComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/CategoryComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/Components/CategoryOwnComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/Components/CategoryOwnComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/IndexComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/IndexComponent.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,7 +26,7 @@
         <counts>
           <entry key="html" value="1" />
           <entry key="js" value="128" />
-          <entry key="vue" value="10878" />
+          <entry key="vue" value="10882" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -35,12 +34,12 @@
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="128" />
           <entry key="PLAIN_TEXT" value="28" />
-          <entry key="Vue.js" value="10850" />
+          <entry key="Vue.js" value="10854" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="1" />
+          <entry key="html" value="2" />
           <entry key="js" value="1" />
           <entry key="json" value="1" />
           <entry key="vue" value="14" />
@@ -48,7 +47,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="1" />
+          <entry key="HTML" value="2" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
@@ -58,7 +57,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.41634837">
+    <splitter split-orientation="horizontal" split-proportion="0.3842628">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
@@ -86,7 +85,7 @@
             <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/IndexComponent.vue">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="105">
-                  <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+                  <caret line="7" selection-start-line="7" selection-end-line="7" />
                   <folding>
                     <element signature="e#188#243#0" expanded="true" />
                   </folding>
@@ -98,16 +97,16 @@
             <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/SlideComponent.vue">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="150">
-                  <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+                  <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/MenuComponent.vue">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="285">
-                  <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+                  <caret line="19" selection-start-line="19" selection-end-line="19" />
                 </state>
               </provider>
             </entry>
@@ -116,18 +115,19 @@
             <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/SharedComponent/TopNavComponent/TopNavComponent.vue">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="297">
-                  <caret line="75" column="21" lean-forward="true" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+                  <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+                <state relative-caret-position="120">
+                  <caret line="8" selection-start-line="8" selection-end-line="8" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#140#161#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -137,7 +137,7 @@
             <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/Components/CategoryOrderChangeComponent.vue">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="240">
-                  <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+                  <caret line="16" selection-start-line="16" selection-end-line="16" />
                 </state>
               </provider>
             </entry>
@@ -146,7 +146,7 @@
             <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/HelloWorld.vue">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="315">
-                  <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+                  <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -164,13 +164,25 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/Components/CategoryOwnComponent.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="528">
-                  <caret line="345" column="49" selection-start-line="345" selection-start-column="49" selection-end-line="345" selection-end-column="49" />
+                <state relative-caret-position="218">
+                  <caret line="280" column="17" selection-start-line="280" selection-start-column="17" selection-end-line="280" selection-end-column="17" />
                   <folding>
                     <element signature="n#style#0;n#modal#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lotte-internship-project/docs/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="479" lean-forward="true" selection-start-column="479" selection-end-column="479" />
+                  <folding>
+                    <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -179,8 +191,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/CategoryComponent.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="219">
-                  <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+                <state relative-caret-position="-852">
+                  <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
                   <folding>
                     <element signature="e#800#868#0" expanded="true" />
                   </folding>
@@ -230,6 +242,7 @@
         <option value="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/IndexComponent.vue" />
         <option value="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/CategoryComponent.vue" />
         <option value="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/Components/CategoryOwnComponent.vue" />
+        <option value="$PROJECT_DIR$/lotte-internship-project/docs/index.html" />
       </list>
     </option>
   </component>
@@ -1483,6 +1496,12 @@
               <item name="LotteProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="LotteProject" type="462c0819:PsiDirectoryNode" />
               <item name="lotte-internship-project" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LotteProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LotteProject" type="462c0819:PsiDirectoryNode" />
+              <item name="lotte-internship-project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1529,30 +1548,6 @@
               <item name="Components" type="462c0819:PsiDirectoryNode" />
               <item name="CategoryComponent" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LotteProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LotteProject" type="462c0819:PsiDirectoryNode" />
-              <item name="lotte-internship-project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="SharedComponent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LotteProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LotteProject" type="462c0819:PsiDirectoryNode" />
-              <item name="lotte-internship-project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="SharedComponent" type="462c0819:PsiDirectoryNode" />
-              <item name="TopNavComponent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LotteProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LotteProject" type="462c0819:PsiDirectoryNode" />
-              <item name="lotte-internship-project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LotteProject" type="b2602c69:ProjectViewProjectNode" />
@@ -1600,13 +1595,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19098000" />
+    <option name="totallyTimeSpent" value="20183000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21097046" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2477396" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1668,10 +1663,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#140#161#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1679,28 +1675,28 @@
     <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/Components/CategoryOrderChangeComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/HelloWorld.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/SharedComponent/TopNavComponent/TopNavComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="75" column="21" lean-forward="true" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+          <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/IndexComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#188#243#0" expanded="true" />
           </folding>
@@ -1710,21 +1706,21 @@
     <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/SlideComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/MenuComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/CategoryComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        <state relative-caret-position="-852">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
           <folding>
             <element signature="e#800#868#0" expanded="true" />
           </folding>
@@ -1733,10 +1729,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/Components/CategoryOwnComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="345" column="49" selection-start-line="345" selection-start-column="49" selection-end-line="345" selection-end-column="49" />
+        <state relative-caret-position="218">
+          <caret line="280" column="17" selection-start-line="280" selection-start-column="17" selection-end-line="280" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#modal#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lotte-internship-project/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="479" lean-forward="true" selection-start-column="479" selection-end-column="479" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -277,8 +277,8 @@
     width: 50px;
     position: relative;
     z-index: 2;
-    background: white;
-    opacity: 0.3;
+    background: #f1f1f1;
+    opacity: 0.6;
   }
 
   .category-image-group .category-image-box .check {
