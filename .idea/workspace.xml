@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23bd278f-56c2-41ec-a14b-0a1dcaaa04a4" name="Default Changelist" comment="" />
+    <list default="true" id="23bd278f-56c2-41ec-a14b-0a1dcaaa04a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -55,10 +57,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
+              <caret column="459" lean-forward="true" selection-start-column="459" selection-end-column="459" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -80,10 +83,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/IndexComponent/Components/CategoryComponent/CategoryComponent.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-461" />
+            <state relative-caret-position="259">
+              <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -128,6 +133,7 @@
         <option value="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/CategoryComponent.vue" />
         <option value="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/Components/CategoryOwnComponent.vue" />
         <option value="$PROJECT_DIR$/lotte-internship-project/docs/index.html" />
+        <option value="$PROJECT_DIR$/docs/index.html" />
       </list>
     </option>
   </component>
@@ -252,7 +258,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20811000" />
+    <option name="totallyTimeSpent" value="20948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -404,15 +410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/IndexComponent/Components/MenuComponent.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -425,7 +422,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/IndexComponent/Components/CategoryComponent/CategoryComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-461" />
+        <state relative-caret-position="259">
+          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="459" lean-forward="true" selection-start-column="459" selection-end-column="459" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
