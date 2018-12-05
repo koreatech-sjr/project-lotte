@@ -1,0 +1,55 @@
+{
+  "data": {
+    "items": [
+      {
+        "dispNm": "홈",
+        "imgPath": "http://image.lotte.com/lotte/mo2018/common/logo_lotte_home_2018.png"
+      },
+      {
+        "dispNm": "추천",
+        "imgPath": "http://image.lotte.com/upload/display/disp_shop/5571899.png"
+      },
+      {
+        "dispNm": "롯데셀렉샵",
+        "imgPath": "http://image.lotte.com/upload/display/disp_shop/5589696_20181126145420.png"
+      },
+      {
+        "dispNm": "의류/속옷",
+        "imgPath": "http://image.lotte.com/upload/display/disp_shop/5573824_20181126162250.png"
+      },
+      {
+        "dispNm": "스포츠/레저",
+        "imgPath": "http://image.lotte.com/upload/display/disp_shop/5573825_20181126145447.png"
+      },
+      {
+        "dispNm": "잡화/슈즈",
+        "imgPath": "http://image.lotte.com/upload/display/disp_shop/5573823_20181126162358.png"
+      },
+      {
+        "dispNm": "뷰티/헬스",
+        "imgPath": "http://image.lotte.com/upload/display/disp_shop/5573822_20181126162345.png"
+      },
+      {
+        "dispNm": "유아동",
+        "imgPath": "http://image.lotte.com/upload/display/disp_shop/5573829_20181126145523.png"
+      },
+      {
+        "dispNm": "가전/가구",
+        "imgPath": "http://image.lotte.com/upload/display/disp_shop/5573827_20181126162417.png"
+      },
+      {
+        "dispNm": "반려/취미",
+        "imgPath": "http://image.lotte.com/upload/display/disp_shop/5573826_20181126145535.png"
+      },
+      {
+        "dispNm": "식품/생활",
+        "imgPath": "http://image.lotte.com/upload/display/disp_shop/5573828_20181126145549.png"
+      },
+      {
+        "dispNm": "전문관",
+        "imgPath": "http://image.lotte.com/lotte/mo2017/category/ic-cate-basemall_201809.png"
+      }
+    ],
+    "total_count": 12
+  }
+}

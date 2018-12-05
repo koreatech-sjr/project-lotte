@@ -6,11 +6,11 @@
 </template>
 
 <script>
-  import TopnavComponent from './components/SharedComponent/TopnavComponent/TopnavComponent'
+  import TopNavComponent from './components/SharedComponent/TopNavComponent/TopNavComponent'
 
   export default {
     components: {
-      "lotte-topnav": TopnavComponent
+      "lotte-topnav": TopNavComponent
     },
     name: 'App'
   }
@@ -18,6 +18,7 @@
 
 <style>
   #app {
+    width: 100%;
     text-align: center;
   }
 </style>

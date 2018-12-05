@@ -32,4 +32,7 @@
 </script>
 
 <style scoped>
+  * {
+
+  }
 </style>
