@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <!--상단 카테고리 디스플레이-->
     <div
       v-if="!addFlag"
       class="category-box">
@@ -12,6 +13,8 @@
         {{ category }}
       </span>
     </div>
+
+    <!--상단 카테고리 추가 및 변경부-->
     <div
       v-if="!addFlag"
       @click="clickAdd()"
@@ -19,6 +22,8 @@
       <img src="../../../../assets/add.png" alt="">
     </div>
 
+
+    <!--나만의 카테고리 표시부-->
     <div v-if="addFlag">
       <lotte-index-category-own
         @close="close"

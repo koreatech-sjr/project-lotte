@@ -1,12 +1,8 @@
 <template>
   <div>
-
     <lotte-index-category></lotte-index-category>
     <lotte-index-slide></lotte-index-slide>
     <lotte-index-menu></lotte-index-menu>
-
-
-    {{ msg }}
   </div>
 </template>
 
@@ -25,7 +21,7 @@
     },
     data () {
       return {
-        msg: 'index'
+
       }
     }
   }

@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <!--내가 추가한 메뉴 상단 header-->
     <div class="header">
       내가 추가한 메뉴
       <span>
@@ -11,13 +12,14 @@
         <img src="../../../../../assets/x.png">
       </span>
       <span
-        @click="changeOrder"
+        @click="clickChangeOrder"
         class="order">
         순서변경
       </span>
-
     </div>
 
+
+    <!--내가 추가한 메뉴 출력부-->
     <div class="category-badge-group">
       <span
         @click="clickMyCategory(category.dispNm)"
@@ -29,14 +31,15 @@
       </span>
     </div>
 
+
+    <!--전체 메뉴 상단 header -->
     <div class="header">
       전체 메뉴
       <span>
         {{ categorySample.length }}
       </span>
     </div>
-
-
+    <!--전체 메뉴 출력부 -->
     <div class="category-image-group">
       <div
         @click="clickMyCategory(category.dispNm)"
@@ -53,48 +56,51 @@
             v-if="myCategory.indexOf(category.dispNm) !== -1"
             src="../../../../../assets/check.png">
         </div>
-
       </div>
     </div>
-
+    <!-- 변경 누를 경우 모달 생성 -->
     <modal
       style="z-index: 2"
       width="300"
       height="auto"
       name="dialog">
+
+      <!--modal 내용부 -->
       <div class="modal-title">
         꾹 누른 후 드래그하셔서 순서를 변경해주세요!
       </div>
-      <draggable class="list-group" element="ul" v-model="list" :options="dragOptions" :move="onMove" @start="isDragging=true" @end="isDragging=false">
+      <!--draggable을 이용해 순서 변경 -->
+      <draggable class="list-group" element="ul" v-model="list" :options="dragOptions" :move="onMove"
+                 @start="isDragging=true" @end="isDragging=false">
         <transition-group type="transition" :name="'flip-list'">
           <div class="list-group-item" v-for="element in list" :key="element.order">
-            <i :class="element.fixed? 'fa fa-anchor' : 'glyphicon glyphicon-pushpin'" @click=" element.fixed=! element.fixed" aria-hidden="true"></i>
+            <i :class="element.fixed? 'fa fa-anchor' : 'glyphicon glyphicon-pushpin'"
+               @click=" element.fixed=! element.fixed" aria-hidden="true"></i>
             {{element.dispNm}}
           </div>
         </transition-group>
       </draggable>
+      <!--modal 내부 버튼부-->
       <div class="btn-group">
         <button
           class="change-done"
-          @click="changeDone">변경하기</button>
+          @click="changeDone">변경하기
+        </button>
         <button
           class="change-cancel"
-          @click="cancel">취소하기</button>
+          @click="cancel">취소하기
+        </button>
       </div>
     </modal>
-
-
   </div>
 </template>
 
 <script>
-  import CategoryOrderChangeComponent from './CategoryOrderChangeComponent'
   import draggable from "vuedraggable";
 
   export default {
-    name: 'CateogryOwn',
+    name: 'CategoryOwn',
     components: {
-      "lotte-index-category-order-change": CategoryOrderChangeComponent,
       draggable
     },
     props: {
@@ -111,6 +117,7 @@
       }
     },
     methods: {
+      // 카테고리 선택으로 로컬 스토리지에 추가 및 제거 하는 부분
       clickMyCategory: function (name) {
         for (let i = 0; i < this.myCategory.length; i++) {
           if (this.myCategory[i] === name) {
@@ -121,11 +128,55 @@
             return
           }
         }
-
         this.myCategory.push(name);
         console.log(this.myCategory);
         this.$localStorage.set("myCategory", JSON.stringify(this.myCategory));
       },
+      // 나의 카테고리 부분을 나갈 때 상위 컴포넌트로 나간다는 사실을 알리는 부분
+      close: function () {
+        this.$emit('close');
+      },
+      // 순서 변경 버튼을 누르는 부분
+      clickChangeOrder: function () {
+        //this.orderFlag = !this.orderFlag;
+        this.list = JSON.parse(this.$localStorage.get("myCategory")).map((dispNm, index) => {
+          return {dispNm, order: index + 1, fixed: false};
+        })
+        this.$modal.show('dialog');
+      },
+
+      //draggable로 item이 움직이는 부분
+      onMove({relatedContext, draggedContext}) {
+        const relatedElement = relatedContext.element;
+        const draggedElement = draggedContext.element;
+        return (
+          (!relatedElement || !relatedElement.fixed) && !draggedElement.fixed
+        );
+      },
+
+
+      // 변경완료 누른 경우
+      changeDone: function () {
+        this.myCategory = this.returnCategoryName(this.list);
+        this.$localStorage.set("myCategory", JSON.stringify(this.myCategory));
+        alert("나의 카테고리 순서가 변경되었습니다.");
+        this.$modal.hide('dialog');
+      },
+
+      // 취소
+      cancel: function () {
+        this.$modal.hide('dialog');
+      },
+
+      //Utill용 list의 dispNm만 빼오는 메소드
+      returnCategoryName: function (ar) {
+        let tmp = [];
+        for (let i = 0; i < ar.length; i++) {
+          tmp.push(ar[i].dispNm);
+        }
+        return tmp;
+      },
+      //util용 array에서 null제거하고 값있는것만 배열로 받는 메소드
       removeNull: function (array) {
         if (array === null) {
           return
@@ -138,48 +189,7 @@
         }
         return tmp;
       },
-      close: function () {
-        this.$emit('close');
-      },
-      changeOrder: function () {
-        //this.orderFlag = !this.orderFlag;
-        this.list = JSON.parse(this.$localStorage.get("myCategory")).map((dispNm, index) => {
-          return { dispNm, order: index + 1, fixed: false };
-        })
-        this.$modal.show('dialog');
-      },
-
-      orderList() {
-        this.list = this.list.sort((one, two) => {
-          return one.order - two.order;
-        });
-      },
-      onMove({ relatedContext, draggedContext }) {
-        const relatedElement = relatedContext.element;
-        const draggedElement = draggedContext.element;
-        return (
-          (!relatedElement || !relatedElement.fixed) && !draggedElement.fixed
-        );
-      },
-      returnCategoryName: function (ar) {
-        let tmp = [];
-        for (let i = 0; i < ar.length; i++) {
-          tmp.push(ar[i].dispNm);
-        }
-        return tmp;
-      },
-      changeDone: function() {
-        this.myCategory = this.returnCategoryName(this.list);
-        this.$localStorage.set("myCategory", JSON.stringify(this.myCategory));
-        alert("나의 카테고리 순서가 변경되었습니다.");
-        this.$modal.hide('dialog');
-      },
-
-      cancel: function() {
-        this.$modal.hide('dialog');
-      }
     },
-
     computed: {
       dragOptions() {
         return {
@@ -188,12 +198,6 @@
           disabled: !this.editable,
           ghostClass: "ghost"
         };
-      },
-      listString() {
-        return JSON.stringify(this.list, null, 2);
-      },
-      list2String() {
-        return JSON.stringify(this.list2, null, 2);
       }
     },
     watch: {
@@ -209,8 +213,6 @@
     },
     created() {
       this.myCategory = this.$localStorage.get("myCategory") === null ? [] : JSON.parse(this.$localStorage.get("myCategory"));
-
-
     }
   }
 </script>
@@ -230,9 +232,11 @@
     font-size: 17px;
     font-weight: 700;
   }
+
   .category {
     background: white;
   }
+
   .category-badge-group, .category-image-group {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -300,6 +304,7 @@
     font-weight: 400;
     padding: 2px 10px;
   }
+
   .close {
     padding-left: 0px;
   }
@@ -308,33 +313,16 @@
     width: 15px;
 
   }
+
   .order {
     border: #FFF solid 1px;
     border-radius: 5px;
   }
 
-  .order-list {
-    width: 100vh;
-    height: 100vh;
-    background: black;
-    z-index: 1;
-  }
-
-  .flip-list-move {
-    transition: transform 0.5s;
-  }
-
-  .no-move {
-    transition: transform 0s;
-  }
-
-  .ghost {
-    opacity: 0.5;
-    background: #c8ebfb;
-  }
   .modal-title {
     padding: 20px;
   }
+
   .list-group {
     min-height: 20px;
     padding: 20px;
@@ -355,17 +343,19 @@
     cursor: move;
   }
 
-  .list-group-item:hover {
+  .list-group-item:hover, .list-group-item:focus {
     background: #9db8fb;
   }
 
   .list-group-item i {
     cursor: pointer;
   }
+
   .btn-group {
     text-align: center;
     padding: 0px 20px 20px;
   }
+
   .change-done {
     color: #333;
     padding: 6px 12px;
@@ -378,6 +368,7 @@
     border-radius: 5px;
     border: none;
   }
+
   .change-cancel {
     color: #333;
     background-color: #fb9d9d;
