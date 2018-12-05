@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="23bd278f-56c2-41ec-a14b-0a1dcaaa04a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lotte-internship-project/src/assets/menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/lotte-internship-project/src/assets/menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/CategoryComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/CategoryComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/Components/CategoryOwnComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/Components/CategoryOwnComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lotte-internship-project/src/components/SharedComponent/TopNavComponent/TopNavComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lotte-internship-project/src/components/SharedComponent/TopNavComponent/TopNavComponent.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,7 +26,7 @@
         <counts>
           <entry key="html" value="1" />
           <entry key="js" value="128" />
-          <entry key="vue" value="10201" />
+          <entry key="vue" value="10290" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -37,7 +34,7 @@
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="128" />
           <entry key="PLAIN_TEXT" value="28" />
-          <entry key="Vue.js" value="10173" />
+          <entry key="Vue.js" value="10262" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -151,8 +148,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/Components/CategoryOwnComponent.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="403">
-                  <caret line="223" column="21" selection-start-line="223" selection-start-column="21" selection-end-line="223" selection-end-column="21" />
+                <state relative-caret-position="260">
+                  <caret line="357" column="19" selection-start-line="357" selection-start-column="19" selection-end-line="357" selection-end-column="19" />
                   <folding>
                     <element signature="n#style#0;n#modal#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                     <element signature="e#2060#2133#0" expanded="true" />
@@ -183,6 +180,7 @@
       <find>class=&quot;close&quot;</find>
       <find>class=&quot;order&quot;</find>
       <find>element</find>
+      <find>check</find>
     </findStrings>
     <replaceStrings>
       <replace>myCategoryParent</replace>
@@ -1578,7 +1576,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18040000" />
+    <option name="totallyTimeSpent" value="18291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1708,8 +1706,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/Components/CategoryOwnComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="223" column="21" selection-start-line="223" selection-start-column="21" selection-end-line="223" selection-end-column="21" />
+        <state relative-caret-position="260">
+          <caret line="357" column="19" selection-start-line="357" selection-start-column="19" selection-end-line="357" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#modal#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#2060#2133#0" expanded="true" />

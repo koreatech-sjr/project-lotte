@@ -273,6 +273,8 @@
     width: 50px;
     position: relative;
     z-index: 2;
+    background: white;
+    opacity: 0.3;
   }
 
   .category-image-group .category-image-box .check {
@@ -351,6 +353,10 @@
     line-height: 1.42857143;
     text-align: left;
     cursor: move;
+  }
+
+  .list-group-item:hover {
+    background: #9db8fb;
   }
 
   .list-group-item i {
