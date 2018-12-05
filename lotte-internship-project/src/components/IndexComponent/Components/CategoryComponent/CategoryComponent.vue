@@ -4,6 +4,8 @@
       v-if="!addFlag"
       class="category-box">
       <span
+        :class="{selected : nowCategory === category}"
+        @click="clickCategory(category)"
         v-for="category in myCategory"
         :key="category.id"
         class="category">
@@ -41,12 +43,16 @@
         msg: 'Category',
         categorySample: CategorySample.data.items,
         myCategory: [],
+        nowCategory: "",
         addFlag: false
       }
     },
     methods: {
       clickAdd: function () {
         this.addFlag = !this.addFlag;
+      },
+      clickCategory: function(val) {
+        this.nowCategory = val;
       },
       returnCategoryName: function (ar) {
         let tmp = [];
@@ -62,10 +68,12 @@
           return;
         }
         this.myCategory = JSON.parse(this.$localStorage.get("myCategory"));
+        this.nowCategory = this.myCategory[0];
       }
     },
     created() {
       this.myCategory = this.$localStorage.get("myCategory") === null || this.$localStorage.get("myCategory") === '[]' ? this.returnCategoryName(this.categorySample) : JSON.parse(this.$localStorage.get("myCategory"));
+      this.nowCategory = this.myCategory[0];
     }
   }
 </script>
@@ -73,23 +81,26 @@
 <style scoped>
   .container {
     height: 35px;
-    padding-top: 10px;
+    padding-top: 5px;
+    margin-top: 5px;
     padding-bottom: 10px;
   }
 
   .category-box {
     float: left;
     width: 90%;
-    height: 35px;
+    height: 40px;
     white-space: nowrap;
     overflow-x: scroll;
+    text-align: left;
   }
 
   .category-box .category {
     display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 22px;
+    font-weight: 700;
   }
 
   .category-add {
@@ -112,5 +123,11 @@
   /* optional: show position indicator in red */
   ::-webkit-scrollbar-thumb {
     background: #FFFFFF;
+  }
+
+  .selected {
+    color: #6f99ff;
+    height: 10px;
+    border-bottom: 2px #6f99ff solid;
   }
 </style>

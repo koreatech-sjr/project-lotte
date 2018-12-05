@@ -8,7 +8,7 @@
       <span
         @click="close"
         class="close">
-        닫기
+        <img src="../../../../../assets/x.png">
       </span>
       <span
         @click="changeOrder"
@@ -59,19 +59,28 @@
 
     <modal
       style="z-index: 2"
+      width="300"
+      height="auto"
       name="dialog">
-
+      <div class="modal-title">
+        꾹 누른 후 드래그하셔서 순서를 변경해주세요!
+      </div>
       <draggable class="list-group" element="ul" v-model="list" :options="dragOptions" :move="onMove" @start="isDragging=true" @end="isDragging=false">
         <transition-group type="transition" :name="'flip-list'">
-          <li class="list-group-item" v-for="element in list" :key="element.order">
+          <div class="list-group-item" v-for="element in list" :key="element.order">
             <i :class="element.fixed? 'fa fa-anchor' : 'glyphicon glyphicon-pushpin'" @click=" element.fixed=! element.fixed" aria-hidden="true"></i>
             {{element.dispNm}}
-          </li>
+          </div>
         </transition-group>
       </draggable>
-
-      <button @click="changeDone">변경하기</button>
-      <button @click="cancel">취소하기</button>
+      <div class="btn-group">
+        <button
+          class="change-done"
+          @click="changeDone">변경하기</button>
+        <button
+          class="change-cancel"
+          @click="cancel">취소하기</button>
+      </div>
     </modal>
 
 
@@ -167,7 +176,6 @@
       },
 
       cancel: function() {
-        alert("취소되었습니다.");
         this.$modal.hide('dialog');
       }
     },
@@ -211,15 +219,20 @@
   .container {
     position: relative;
     height: 100%;
-    background: #6f99ff;
+    background: #f1f1f1;
     z-index: 0;
+    margin-top: -5px;
   }
 
   .header {
     text-align: left;
     padding-left: 20px;
+    font-size: 17px;
+    font-weight: 700;
   }
-
+  .category {
+    background: white;
+  }
   .category-badge-group, .category-image-group {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -273,13 +286,29 @@
   }
 
   .my {
-    background: white;
+    background: #6f99ff;
+    color: black;
   }
 
   .close, .order {
     cursor: pointer;
     float: right;
     margin-right: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 2px 10px;
+  }
+  .close {
+    padding-left: 0px;
+  }
+
+  .close img {
+    width: 15px;
+
+  }
+  .order {
+    border: #FFF solid 1px;
+    border-radius: 5px;
   }
 
   .order-list {
@@ -288,4 +317,72 @@
     background: black;
     z-index: 1;
   }
+
+  .flip-list-move {
+    transition: transform 0.5s;
+  }
+
+  .no-move {
+    transition: transform 0s;
+  }
+
+  .ghost {
+    opacity: 0.5;
+    background: #c8ebfb;
+  }
+  .modal-title {
+    padding: 20px;
+  }
+  .list-group {
+    min-height: 20px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .list-group-item {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: left;
+    cursor: move;
+  }
+
+  .list-group-item i {
+    cursor: pointer;
+  }
+  .btn-group {
+    text-align: center;
+    padding: 0px 20px 20px;
+  }
+  .change-done {
+    color: #333;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    cursor: pointer;
+    background: #9db8fb;
+    border-radius: 5px;
+    border: none;
+  }
+  .change-cancel {
+    color: #333;
+    background-color: #fb9d9d;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+  }
+
 </style>

@@ -75,9 +75,11 @@
     font-size: 18px;
     font-weight: 700;
     float: left;
+    color: white;
   }
   .search {
     height: 30px;
+    color: white;
   }
 
   .search .search-box {
@@ -88,9 +90,14 @@
   .search .search-box input {
     float: left;
     width: 75%;
+    height: 24px;
+    border-radius: 10px;
+    border: none;
   }
 
   .search .search-box .search-btn {
+    position: relative;
+    top: 4px;
     cursor: pointer;
     float: left;
     padding-left: 10px;
