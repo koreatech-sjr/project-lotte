@@ -2,8 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23bd278f-56c2-41ec-a14b-0a1dcaaa04a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/Components/CategoryOwnComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/Components/CategoryOwnComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/.idea/LotteProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/.postcssrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/build/check-versions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/build/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/build/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/build/vue-loader.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/build/webpack.base.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/build/webpack.dev.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/build/webpack.prod.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/config/dev.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/config/prod.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/docs/static/css/app.708c8c8b44d1b02e0a3f969f9311520c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/docs/static/css/app.708c8c8b44d1b02e0a3f969f9311520c.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/docs/static/img/cart.c0d50b1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/docs/static/img/check.4bbefcd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/docs/static/js/app.1c6423dade6e4ecba090.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/docs/static/js/app.1c6423dade6e4ecba090.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/docs/static/js/manifest.2ae2e69a05c33dfc65f8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/docs/static/js/manifest.2ae2e69a05c33dfc65f8.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/docs/static/js/vendor.83d97a98eb2394006e97.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/docs/static/js/vendor.83d97a98eb2394006e97.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/assets/add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/assets/cart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/assets/check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/assets/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/assets/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/CategoryComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/Components/CategoryOrderChangeComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/components/IndexComponent/Components/CategoryComponent/Components/CategoryOwnComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/components/IndexComponent/Components/MenuComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/components/IndexComponent/Components/SlideComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/components/IndexComponent/IndexComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/components/SharedComponent/TopNavComponent/TopNavComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/src/static/CategorySample.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotte-internship-project/lotte-internship-project/static/.gitkeep" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -223,7 +274,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/lotte-internship-project" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -1474,6 +1525,7 @@
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -1595,7 +1647,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20183000" />
+    <option name="totallyTimeSpent" value="20484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
