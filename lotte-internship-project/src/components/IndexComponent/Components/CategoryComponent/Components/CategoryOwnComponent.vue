@@ -5,12 +5,17 @@
       <span>
         {{ myCategory.length }}
       </span>
-
       <span
         @click="close"
         class="close">
         닫기
       </span>
+      <span
+        @click="changeOrder"
+        class="order">
+        순서변경
+      </span>
+
     </div>
 
     <div class="category-badge-group">
@@ -51,19 +56,28 @@
 
       </div>
     </div>
-
+    <div
+      v-if="orderFlag">
+      <lotte-index-category-order-change></lotte-index-category-order-change>
+    </div>
   </div>
 </template>
 
 <script>
+  import CategoryOrderChangeComponent from './CategoryOrderChangeComponent'
+
   export default {
     name: 'CateogryOwn',
+    components: {
+      "lotte-index-category-order-change": CategoryOrderChangeComponent,
+    },
     props: {
       categorySample: null,
     },
     data() {
       return {
-        myCategory: []
+        myCategory: [],
+        orderFlag: false
       }
     },
     methods: {
@@ -81,8 +95,6 @@
         this.myCategory.push(name);
         console.log(this.myCategory);
         this.$localStorage.set("myCategory", JSON.stringify(this.myCategory));
-        
-
       },
       removeNull: function (array) {
         if (array === null) {
@@ -96,8 +108,11 @@
         }
         return tmp;
       },
-      close: function() {
+      close: function () {
         this.$emit('close');
+      },
+      changeOrder: function () {
+        this.orderFlag = !this.orderFlag;
       }
     },
     created() {
@@ -175,7 +190,7 @@
     background: white;
   }
 
-  .close {
+  .close, .order {
     cursor: pointer;
     float: right;
     margin-right: 10px;

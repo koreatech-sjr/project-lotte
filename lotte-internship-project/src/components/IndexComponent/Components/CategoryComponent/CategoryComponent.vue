@@ -24,22 +24,16 @@
         :categorySample="categorySample"></lotte-index-category-own>
     </div>
 
-
-    <!--<lotte-index-category-order-change></lotte-index-category-order-change>-->
-
-
   </div>
 </template>
 
 <script>
-  import CategoryOrderChangeComponent from './Components/CategoryOrderChangeComponent'
   import CategoryOwnComponent from './Components/CategoryOwnComponent'
   import CategorySample from '../../../../static/CategorySample';
 
   export default {
     name: 'Category',
     components: {
-      "lotte-index-category-order-change": CategoryOrderChangeComponent,
       "lotte-index-category-own": CategoryOwnComponent
     },
     data() {
@@ -70,7 +64,6 @@
         this.myCategory = JSON.parse(this.$localStorage.get("myCategory"));
       }
     },
-
     created() {
       this.myCategory = this.$localStorage.get("myCategory") === null || this.$localStorage.get("myCategory") === '[]' ? this.returnCategoryName(this.categorySample) : JSON.parse(this.$localStorage.get("myCategory"));
     }
